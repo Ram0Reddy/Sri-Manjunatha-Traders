@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sri Manjunatha Traders | Quality Building Materials</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed-dim": "#b8c8da",
+              "surface-container": "#eeeee9",
+              "on-surface": "#1a1c19",
+              "surface-container-highest": "#e3e3de",
+              "on-secondary": "#ffffff",
+              "on-secondary-container": "#556474",
+              "on-error": "#ffffff",
+              "primary-fixed-dim": "#aec7f7",
+              "surface-dim": "#dadad5",
+              "on-tertiary-container": "#f18135",
+              "surface": "#fafaf5",
+              "on-tertiary-fixed-variant": "#763400",
+              "background": "#fafaf5",
+              "tertiary-fixed-dim": "#ffb68d",
+              "primary": "#002046",
+              "on-primary-fixed": "#001b3d",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed": "#0d1d2a",
+              "on-primary-container": "#87a0cd",
+              "tertiary-container": "#5c2700",
+              "primary-fixed": "#d6e3ff",
+              "primary-container": "#1b365d",
+              "tertiary": "#3a1600",
+              "surface-container-low": "#f4f4ef",
+              "on-tertiary": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-primary-fixed-variant": "#2e476f",
+              "error": "#ba1a1a",
+              "inverse-surface": "#2f312e",
+              "secondary-container": "#d1e1f4",
+              "on-tertiary-fixed": "#321200",
+              "outline-variant": "#c4c6cf",
+              "outline": "#74777f",
+              "tertiary-fixed": "#ffdbc9",
+              "surface-variant": "#e3e3de",
+              "secondary": "#50606f",
+              "on-surface-variant": "#44474e",
+              "inverse-on-surface": "#f1f1ec",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#e8e8e3",
+              "on-background": "#1a1c19",
+              "inverse-primary": "#aec7f7",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#d4e4f6",
+              "on-secondary-fixed-variant": "#394857",
+              "surface-bright": "#fafaf5",
+              "surface-tint": "#465f88"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Work Sans", "sans-serif"],
+              "label": ["Work Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Work Sans', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="flex flex-col">
+<span class="text-xl font-extrabold tracking-tighter text-blue-900 dark:text-blue-100">Sri Manjunatha Traders</span>
+<span class="text-[10px] font-label uppercase tracking-[0.2em] text-on-surface-variant">Quality Building Materials Supplier</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-manrope font-bold tracking-tight text-blue-900 dark:text-blue-400 border-b-2 border-blue-900 dark:border-blue-400 pb-1" href="#home">Home</a>
+<a class="font-manrope font-bold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="#products">Products</a>
+<a class="font-manrope font-bold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="#about">About</a>
+<a class="font-manrope font-bold tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors" href="#contact">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-sm font-bold scale-95 active:opacity-80 transition-transform hover:bg-primary-container">Get Quote</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20" id="home">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img alt="Construction Site Hero" class="w-full h-full object-cover brightness-[0.4]" data-alt="dramatic wide shot of a modern construction site with structural steel beams and concrete under a clear sky at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU82klY6MqYXzGxJ3xmMSo5AR2QgPJQnA0GYnqmHf6QUHiRpsFNFGal6KUKx1A2ioSKgx17YPg2VnKXT5niTIr7rjAqz42-F9jdSz9fI4Fp7M91A2Xt4s6R3xj-6RspxzcYCM6g2MHC-H6KQZDweKLyIFpBlKfBughyq8tFEnwyq-bVecfkEKNJUf0DDcztDYNHhcpHO3nVgdiGH_4QAQs1lSpVnQxlMhu-gGR1x_NfkZ55f8Xh29gIdA555kxtKuQSMe4K129CPyl"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-xs font-label font-bold uppercase tracking-widest">Shadnagar's Preferred Partner</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-white leading-[1.1] tracking-tight">
+                    Your Trusted <span class="text-primary-fixed-dim">Building Material</span> Partner
+                </h1>
+<p class="text-xl text-slate-200 font-body max-w-lg leading-relaxed">
+                    Reliable supply of Cement, Sand, Bricks, Dust, and Chips for high-performance construction and lasting integrity.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="bg-primary-fixed text-on-primary-fixed px-8 py-4 rounded-sm font-bold text-lg hover:bg-white transition-colors" href="#products">Explore Materials</a>
+<a class="border border-white/30 text-white backdrop-blur-md px-8 py-4 rounded-sm font-bold text-lg hover:bg-white/10 transition-colors" href="#contact">Contact Sales</a>
+</div>
+</div>
+<div class="hidden md:block">
+<div class="bg-surface-container-lowest/10 backdrop-blur-xl p-8 rounded-sm border border-white/10">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white/5 p-4 space-y-2">
+<span class="text-3xl font-bold text-white tracking-tighter">15+</span>
+<p class="text-xs text-slate-300 font-label uppercase">Years of Service</p>
+</div>
+<div class="bg-white/5 p-4 space-y-2">
+<span class="text-3xl font-bold text-white tracking-tighter">500+</span>
+<p class="text-xs text-slate-300 font-label uppercase">Projects Completed</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Products Section -->
+<section class="py-24 bg-surface-container-low" id="products">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="space-y-4">
+<span class="text-primary font-label font-bold tracking-widest uppercase text-sm">Our Inventory</span>
+<h2 class="text-4xl font-extrabold tracking-tight text-primary">Foundational Materials</h2>
+</div>
+<p class="max-w-md text-on-surface-variant font-body leading-relaxed">
+                    Premium quality construction materials sourced directly from manufacturers to ensure structural integrity for your projects.
+                </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Cement -->
+<div class="bg-surface-container-lowest p-8 transition-all hover:bg-white group">
+<div class="aspect-[4/3] mb-6 overflow-hidden rounded-sm bg-surface-container-highest">
+<img alt="Cement" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/cement.jpg" onerror="this.src='https://placehold.co/600x450/e3e3de/002046?text=Cement'"/>
+</div>
+<h3 class="text-2xl font-bold text-primary">Cement</h3>
+</div>
+<!-- Sand -->
+<div class="bg-surface-container-lowest p-8 transition-all hover:bg-white group">
+<div class="aspect-[4/3] mb-6 overflow-hidden rounded-sm bg-surface-container-highest">
+<img alt="Sand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/sand.jpg" onerror="this.src='https://placehold.co/600x450/e3e3de/002046?text=Sand'"/>
+</div>
+<h3 class="text-2xl font-bold text-primary">Sand</h3>
+</div>
+<!-- Bricks -->
+<div class="bg-surface-container-lowest p-8 transition-all hover:bg-white group">
+<div class="aspect-[4/3] mb-6 overflow-hidden rounded-sm bg-surface-container-highest">
+<img alt="Bricks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/bricks.jpg" onerror="this.src='https://placehold.co/600x450/e3e3de/002046?text=Bricks'"/>
+</div>
+<h3 class="text-2xl font-bold text-primary">Bricks</h3>
+</div>
+<!-- Dust -->
+<div class="bg-surface-container-lowest p-8 transition-all hover:bg-white group">
+<div class="aspect-[4/3] mb-6 overflow-hidden rounded-sm bg-surface-container-highest">
+<img alt="Dust" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/dust.jpg" onerror="this.src='https://placehold.co/600x450/e3e3de/002046?text=Dust'"/>
+</div>
+<h3 class="text-2xl font-bold text-primary">Dust</h3>
+</div>
+<!-- Chips -->
+<div class="bg-surface-container-lowest p-8 transition-all hover:bg-white group">
+<div class="aspect-[4/3] mb-6 overflow-hidden rounded-sm bg-surface-container-highest">
+<img alt="Chips" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/chips.jpg" onerror="this.src='https://placehold.co/600x450/e3e3de/002046?text=Chips'"/>
+</div>
+<h3 class="text-2xl font-bold text-primary">Chips</h3>
+</div>
+<!-- Tandur Stone -->
+<div class="bg-surface-container-lowest p-8 transition-all hover:bg-white group">
+<div class="aspect-[4/3] mb-6 overflow-hidden rounded-sm bg-surface-container-highest">
+<img alt="Tandur Stone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/tandur_stone.jpg" onerror="this.src='https://placehold.co/600x450/e3e3de/002046?text=Tandur+Stone'"/>
+</div>
+<h3 class="text-2xl font-bold text-primary">Tandur Stone</h3>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Transport Section -->
+<section class="py-20 bg-surface" id="transport">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
+<div class="space-y-4">
+<span class="text-primary font-label font-bold tracking-widest uppercase text-sm">Our Logistics</span>
+<h2 class="text-4xl font-extrabold tracking-tight text-primary">Reliable Transport</h2>
+</div>
+<p class="max-w-md text-on-surface-variant font-body leading-relaxed">
+                    Dedicated fleet of vehicles ensuring timely and safe delivery of materials directly to your construction site.
+                </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Tractor -->
+<div class="bg-surface-container-lowest p-8 transition-all hover:bg-white group">
+<div class="aspect-[4/3] mb-6 overflow-hidden rounded-sm bg-surface-container-highest">
+<img alt="Tractor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/tractor.jpg" onerror="this.src='https://placehold.co/600x450/e3e3de/002046?text=Tractor'"/>
+</div>
+<h3 class="text-2xl font-bold text-primary">Tractor</h3>
+</div>
+<!-- Bolero -->
+<div class="bg-surface-container-lowest p-8 transition-all hover:bg-white group">
+<div class="aspect-[4/3] mb-6 overflow-hidden rounded-sm bg-surface-container-highest">
+<img alt="Bolero" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/bolero.jpg" onerror="this.src='https://placehold.co/600x450/e3e3de/002046?text=Bolero'"/>
+</div>
+<h3 class="text-2xl font-bold text-primary">Bolero</h3>
+</div>
+<!-- Truck -->
+<div class="bg-surface-container-lowest p-8 transition-all hover:bg-white group">
+<div class="aspect-[4/3] mb-6 overflow-hidden rounded-sm bg-surface-container-highest">
+<img alt="Truck" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/truck.jpg" onerror="this.src='https://placehold.co/600x450/e3e3de/002046?text=Truck'"/>
+</div>
+<h3 class="text-2xl font-bold text-primary">Truck</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section: Asymmetrical Layout -->
+<section class="py-16 overflow-hidden bg-surface" id="about">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+
+<div class="w-48 h-48 mx-auto bg-surface-container-high rounded-sm overflow-hidden">
+
+<img
+src="images/ramreddy.png"
+alt="Ram Reddy"
+class="w-full h-full object-cover"
+/>
+
+</div>
+
+<p class="text-center mt-3 text-lg font-bold text-primary">
+Prop: Erra Ram Reddy
+</p>
+
+<div class="absolute -bottom-10 -right-10 bg-primary p-12 hidden md:block">
+
+<span class="material-symbols-outlined text-white text-6xl" style="font-variation-settings: 'FILL' 1;">
+architecture
+</span>
+
+</div>
+
+</div>
+<div class="space-y-8">
+<span class="text-tertiary-fixed-variant font-label font-bold tracking-[0.2em] uppercase text-sm">Established Excellence</span>
+<h2 class="text-4xl md:text-5xl font-extrabold text-primary leading-tight">Reliable Supply for <br/>Modern Horizons</h2>
+<div class="space-y-6 text-on-surface-variant font-body text-lg leading-relaxed">
+<p>
+                        Sri Manjunatha Traders is a reliable supplier of construction materials in Shadnagar. We provide quality materials at affordable prices for house construction and commercial projects.
+                    </p>
+<p>
+                        Our mission is to empower builders with materials that stand the test of time. From individual home builders to large-scale contractors, we offer personalized service and logistics that keep your project moving.
+                    </p>
+                    
+</div>
+<div class="pt-4 border-t border-outline-variant/30 grid grid-cols-2 gap-8">
+<div>
+<p class="text-primary font-bold text-xl tracking-tight">On-Site Delivery</p>
+<p class="text-sm text-on-surface-variant mt-1">We provide delivery service anywhere as per order requirement.</p>
+</div>
+<div>
+<p class="text-primary font-bold text-xl tracking-tight">Bulk Discounts</p>
+<p class="text-sm text-on-surface-variant mt-1">Competitive pricing for large projects.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-surface-container" id="contact">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-surface-container-lowest rounded-sm shadow-sm p-8 md:p-16 flex flex-col md:flex-row gap-16">
+<div class="flex-1 space-y-8">
+<h2 class="text-4xl font-extrabold text-primary">Get in Touch</h2>
+<p class="text-on-surface-variant leading-relaxed">Ready to start your next project? Visit our showroom or call us for a detailed quote and material consultation.</p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary bg-primary-fixed p-3 rounded-sm">location_on</span>
+<div>
+<p class="font-bold text-primary">Address</p>
+<p class="text-on-surface-variant"> Pargi Road, Elkatta Chowrastha, 509216, <br/>Telangana, India</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary bg-primary-fixed p-3 rounded-sm">call</span>
+<div>
+<p class="font-bold text-primary">Phone Number</p>
+<p class="text-on-surface-variant">+91 9849026519</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1 bg-surface-container-low p-8 rounded-sm">
+<form class="space-y-4">
+<div class="space-y-2">
+<label class="text-xs font-label font-bold uppercase tracking-wider text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b-2 focus:border-primary transition-all p-3 rounded-none" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label font-bold uppercase tracking-wider text-on-surface-variant">Required Material</label>
+<select class="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b-2 focus:border-primary transition-all p-3 rounded-none">
+<option>Cement</option>
+<option>Sand</option>
+<option>Bricks</option>
+<option>Dust/Chips</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label font-bold uppercase tracking-wider text-on-surface-variant">Message</label>
+<textarea class="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b-2 focus:border-primary transition-all p-3 rounded-none" placeholder="How can we help?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-bold py-4 rounded-sm hover:bg-primary-container transition-colors mt-4">Send Inquiry</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-slate-200/50 dark:border-slate-800/50 bg-slate-50 dark:bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-8">
+<div class="md:col-span-1">
+<span class="text-lg font-bold text-blue-900 dark:text-blue-200 block mb-4">Sri Manjunatha Traders</span>
+<p class="font-work-sans text-xs tracking-wide text-slate-500 leading-loose">
+                    Leading the supply of industrial and residential building materials in the Shadnagar region.
+                </p>
+</div>
+<div class="space-y-4">
+<span class="font-work-sans text-sm tracking-wide uppercase text-blue-900 dark:text-blue-400 font-bold">Quick Links</span>
+<ul class="space-y-2">
+<li><a class="font-work-sans text-sm tracking-wide uppercase text-slate-500 hover:text-blue-700 hover:underline decoration-blue-500 underline-offset-4 transition-opacity" href="#home">Home</a></li>
+<li><a class="font-work-sans text-sm tracking-wide uppercase text-slate-500 hover:text-blue-700 hover:underline decoration-blue-500 underline-offset-4 transition-opacity" href="#products">Products</a></li>
+<li><a class="font-work-sans text-sm tracking-wide uppercase text-slate-500 hover:text-blue-700 hover:underline decoration-blue-500 underline-offset-4 transition-opacity" href="#about">About Us</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<span class="font-work-sans text-sm tracking-wide uppercase text-blue-900 dark:text-blue-400 font-bold">Legal</span>
+<ul class="space-y-2">
+<li><a class="font-work-sans text-sm tracking-wide uppercase text-slate-500 hover:text-blue-700 hover:underline decoration-blue-500 underline-offset-4 transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="font-work-sans text-sm tracking-wide uppercase text-slate-500 hover:text-blue-700 hover:underline decoration-blue-500 underline-offset-4 transition-opacity" href="#">Terms of Service</a></li>
+<li><a class="font-work-sans text-sm tracking-wide uppercase text-slate-500 hover:text-blue-700 hover:underline decoration-blue-500 underline-offset-4 transition-opacity" href="#">Bulk Orders</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<span class="font-work-sans text-sm tracking-wide uppercase text-blue-900 dark:text-blue-400 font-bold">Location</span>
+<div class="w-full h-32 rounded-sm overflow-hidden border border-outline-variant/20">
+<a href="https://maps.app.goo.gl/wu7RUoyHnRDBSpG28" target="_blank" class="block w-full h-full">
+<img alt="Location Map Placeholder" class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-500" data-location="Shadnagar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDemDjoIPjRK97rfluR13lC5HUSIUbam9ce_PdkJNONdR1fYAeGSdWi3nMbD8bnYo-3z2h-hP0Sj1AQGcFLvAU0Mbi36rIQzI-Ag5Xq-tPXpGU5crpIH7tGwLR5nblsungsGY3ToHg9w7Z2sUd1lpa1Twa6GLmanMinRY03RcVlxm6m_uK1ny5986mW6qzDwbSYZxMCAkuW53MNQWixZkeBkHvcx1AamtYONML09ywHx4vrL0WseqUMOx-8J737ZUp2f_RJqtzskls"/>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-slate-200/20 text-center">
+<p class="font-work-sans text-[10px] tracking-widest uppercase text-slate-400">
+                © 2024 Sri Manjunatha Traders. Structural Integrity Guaranteed.
+            </p>
+</div>
+</footer>
+</body></html>
